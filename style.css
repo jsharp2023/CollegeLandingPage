@@ -1,0 +1,118 @@
+/* style 2 of 2 font */
+/* letter spacing */
+h1{
+   border:55px solid maroon;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-size: 3.5rem;
+    
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.flex-container {
+    display: table-column;
+    flex-flow: column wrap;
+    background-color: maroon;
+  }
+/* style on of 2 font */
+p{
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    text-align: center;
+    color:white;
+    word-spacing: 0.2rem;
+    width: auto;
+  
+    
+}
+/* three colum */
+.text{
+    grid-column: 1 / 3;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  column-width: 25rem;
+  text-align: justify;
+}
+ul{
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    display:inline-block, contents;
+    list-style: none;
+    font-size: 1rem;
+      
+}
+li{
+    display: inline-block;
+    margin-inline: 5rem;
+    font-size: 1.5rem;
+   
+}
+a:hover{
+    position:relative;
+    color:blue;
+}
+/* flex */
+body{
+    background-color: gray;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin:0 auto;
+    gap: 16px;
+    
+    
+}
+.flex-container{
+    flex-direction: column;
+}
+footer{
+    
+    text-align: end;
+    border:10px solid maroon;
+    padding: 10px;
+    margin:100px;
+}
+
+.list{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin:0 auto;
+    gap: 16px;
+}
+.navbar {
+    float:left;
+    width: 100%;
+    color:aliceblue;
+    overflow: auto;
+    flex-direction: column;
+    height: fit-content;
+    font-size: 25px;
+    background-color: lightgray;
+    word-spacing: 2.5rem;
+  }
+  /* added media */
+  @media only screen and (max-width: 720px) {
+    .navbar {
+      grid-template-columns: 1fr;
+    }
+    .text {
+        font-size: 1.6rem;
+      } 
+  }
+
+
